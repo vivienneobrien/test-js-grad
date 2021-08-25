@@ -61,7 +61,7 @@ const organiseMaintainers = async () => {
       names.forEach(username => { 
         let result = [];
         data.forEach(data => {
-          if (checkedPackages(username, data.package)) { // is true because we return the package name
+          if (checkedPackages(username, data.package)) { 
             result.push(data.package.name);
           }
         });
